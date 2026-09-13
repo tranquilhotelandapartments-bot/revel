@@ -67,13 +67,10 @@ export default function App() {
     return window.location.search || '';
   });
 
-  // Dark mode: auto (respects system) + manual toggle, persisted
+  // Dark mode: manual toggle only, defaults to light, persisted
   const [dark, setDark] = useState<boolean>(() => {
     if (typeof window === 'undefined') return false;
-    const stored = window.localStorage.getItem('rhu-theme');
-    if (stored === 'dark') return true;
-    if (stored === 'light') return false;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return window.localStorage.getItem('rhu-theme') === 'dark';
   });
 
   useEffect(() => {
