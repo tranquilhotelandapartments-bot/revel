@@ -40,8 +40,8 @@ export const initialOrgSettings: OrganizationSettings = {
   safeguardingEmail: 'safeguarding@revelhouseuganda.org',
   socialLinks: {
     facebook: 'https://www.facebook.com/profile.php?id=61590717190394',
-    instagram: 'https://www.instagram.com/revel.house.uganda2',
-    tiktok: 'https://www.tiktok.com/@revel.house.ug',
+    instagram: 'https://www.instagram.com/revel_house_uganda?stkn=a3ZldDVyajNhanVw',
+    tiktok: 'https://www.tiktok.com/@revel.house.ug?_r=1&_t=ZS-99hQnB9eLy9',
     youtube: 'https://www.youtube.com/@REVELHOUSEUGANDA',
     linkedin: 'https://www.linkedin.com/in/revel-house-uganda-61452b39b',
     twitter: 'https://x.com/LLCsupportUg',
