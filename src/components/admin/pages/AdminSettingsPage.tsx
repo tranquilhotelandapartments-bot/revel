@@ -14,7 +14,13 @@ export function AdminSettingsPage() {
     async function load() {
       try {
         const data = await getSiteSettings();
-        if (data) setSettings(data);
+        if (data) {
+          setSettings({
+            ...initialOrgSettings,
+            ...data,
+            socialLinks: { ...initialOrgSettings.socialLinks, ...(data.socialLinks || {}) },
+          });
+        }
       } catch (err) {
         console.error(err);
       } finally {
